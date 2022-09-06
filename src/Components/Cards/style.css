@@ -1,0 +1,60 @@
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10vw;
+  padding: 10vh 20vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: #007278;
+}
+
+.text {
+  text-align: start;
+  color: #007278;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1vh;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.number {
+  text-align: start;
+  color: #a50344;
+  font-size: 2.5rem;
+  font-weight: 450;
+  margin-top: 1vh;
+}
+
+@media (max-width: 945px) {
+  .text {
+    font-size: 1.1rem;
+  }
+  .number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .text {
+    font-size: 0.9rem;
+  }
+  .number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 330px) {
+}

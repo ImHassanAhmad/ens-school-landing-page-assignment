@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 0 5vw;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+  background-position: top;
+  background-size: cover;
+}
+
+.text1 {
+  text-align: start;
+  color: #eef5f6;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.text2 {
+  text-align: start;
+  color: #a50344;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pad {
+  margin-top: 15vh;
+}
+
+@media (max-width: 1150px) {
+  .text1 {
+    font-size: 1.5rem;
+  }
+  .text2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .text1 {
+    font-size: 1.2rem;
+  }
+  .text2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .text1 {
+    font-size: 1rem;
+  }
+  .text2 {
+    font-size: 1rem;
+  }
+}

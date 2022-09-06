@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { useState, useEffect } from "react";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import Cards from "./Components/Cards";
+import Services from "./Components/Services";
+import News from "./Components/News";
+import Campuses from "./Components/Campuses";
+import Employment from "./Components/Employment";
+import Accredation from "./Components/Accredation";
+import Footer from "./Components/Footer";
 
 function App() {
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
+
+  const [windowDimensions, setWindowDimensions] = useState(null);
+
+  useEffect(() => {
+    handleResize();
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar windowDimensions={windowDimensions} />
+      <Header />
+      <Cards />
+      <Services />
+      <News />
+      <Campuses />
+      <Employment />
+      <Accredation />
+      <Footer />
+    </Fragment>
   );
 }
 

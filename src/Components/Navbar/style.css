@@ -1,0 +1,127 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5vw;
+  border-radius: 0px 0px 20px 20px;
+  height: 80px;
+  width: 100vw;
+  background: rgb(224, 245, 246, 0.7);
+  z-index: 10;
+}
+
+.links {
+  display: flex;
+  gap: 2vw;
+}
+
+.textHeader {
+  transition: 0.5s;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #188085;
+}
+
+.textHeader:hover {
+  color: #a50344;
+}
+
+.socials {
+  z-index: 10;
+  position: fixed;
+  bottom: 45vh;
+  left: 0;
+  width: 40px;
+  border-radius: 0px 15px 15px 0px;
+  background: #188085;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  padding: 10px 0;
+}
+
+.fb:hover {
+  color: #3a559f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ig:hover {
+  color: #8837ab;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tw:hover {
+  color: #4ca2e5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ln:hover {
+  color: #007ab9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.yt:hover {
+  color: #e91b0c;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cl:hover {
+  color: #a60646;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mainLogo {
+  height: 50px;
+  width: 275px;
+}
+
+.menu {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .textHeader {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .textHeader {
+    font-size: 0.7rem;
+  }
+  .navbar {
+    height: 70px;
+  }
+  .mainLogo {
+    height: 40px;
+    width: 230px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 50px;
+  }
+  .mainLogo {
+    height: 35px;
+    width: 190px;
+  }
+}
+
+@media (max-width: 330px) {
+  .textHeader {
+    font-size: 0.6rem;
+  }
+}

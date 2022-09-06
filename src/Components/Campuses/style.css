@@ -1,0 +1,72 @@
+.campuses {
+  display: flex;
+  gap: 2vw;
+  padding: 0 10vw;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainerCampus {
+  padding: 30px 0;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textCardCampus {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #007482;
+  margin: 1vh 0;
+  user-select: none;
+}
+
+.image {
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.cardCampus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titleNews {
+  color: #a50344;
+  font-size: 2rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 1vh;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #007482 !important;
+}
+
+@media (max-width: 1300px) {
+  .imageContainerCampus {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 720px) {
+}
+
+@media (max-width: 330px) {
+}

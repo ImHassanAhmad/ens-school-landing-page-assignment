@@ -1,0 +1,36 @@
+.employment {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: 5vh 0;
+  padding: 0 5vw;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.button {
+  cursor: pointer;
+  transition: 0.5s;
+  background: white;
+  border-radius: 10px;
+  padding: 1vh 2vw;
+}
+.button:hover {
+  background: #a50344;
+  color: white;
+}
+
+.button:hover > .textButton {
+  color: white;
+}
+
+.textButton {
+  transition: 0.5s;
+  font-size: 0.9rem;
+  color: black;
+}
